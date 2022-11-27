@@ -1,4 +1,5 @@
 let numTimesClicked = 0
+let counter = document.getElementById('#count');
 
 function win() {
   alert('You win!')
@@ -11,8 +12,8 @@ function reset() {
 
 function click() {
   numTimesClicked++
-  console.log('numTimesClicked -->', numTimesClicked)
-  if (numTimesClicked === 10) {
+//  counter.textContent = numTimesClicked;
+  if (numTimesClicked === 5) {
     win()
   }
 }
